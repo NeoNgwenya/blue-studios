@@ -35,10 +35,12 @@ export default function Home() {
     <main>
       <InView />
       <header className="siteHeader">
-        <a className="brand" href="#top" aria-label="Blue Studios home">
-          <span className="brandMark"><Aperture size={19} /></span>
-          <span>Blue<span>Studios</span></span>
-        </a>
+          <a className="brand brandLogo" href="#top" aria-label="Blue Studios home">
+            <img
+              src="/images/blue-studios-logo.jpeg"
+              alt="Blue Studios event photography"
+            />
+          </a>
         <nav aria-label="Main navigation">
           <a href="#services">Services</a>
           <a href="#about">About</a>
@@ -140,7 +142,12 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand" href="#top"><span className="brandMark"><Aperture size={19} /></span><span>Blue<span>Studios</span></span></a>
+        <a className="brand footerLogo" href="#top" aria-label="Blue Studios home">
+          <img
+            src="/images/blue-studios-logo.jpeg"
+            alt="Blue Studios event photography"
+          />
+        </a>
         <p>Capturing life&apos;s special moments.</p>
         <p>© {new Date().getFullYear()} Blue Studios</p>
       </footer>
